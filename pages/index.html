@@ -11,65 +11,87 @@
             flex-direction: row;
         }
         .card{
-            width: 200px;
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+            height: 600px;
             border: 1px solid black;
             margin: 10px;
             box-shadow: 5px 5px rgb(211, 211, 211);
         }
-        .card > h3,p {
-            padding: 10px;
+        .image{
+            width: 100%;
+            height: 30%;
         }
-        img{
-            width: 200px;
-            height: 150px;
+        .image > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .heading{
+            padding: 3%;
+            height: 10%;
+        }
+        .para{
+            height: 30%;
+            padding: 3%;
         }
         .button{
             background-color: grey;
             color: black;
-            margin: 10px;
+            margin: 2%;
         }
         .button > p{
-            padding: 10px;
+            padding: 1%;
             text-align: center;
+        }
+        @media screen and (max-width: 480px) {
+            .main-flex-box{
+                flex-direction: column;
+            }
+            .card{
+                width: 90%;
+                height: fit-content;
+            }
         }
     </style>
 </head>
 <body>
     <div class="main-flex-box">
         <div class="card">
-            <img src="../assets/1.jpg" alt="1">
-            <h3>Seamlessly visualize quality</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum.</p>
+            <div class="image"><img src="../assets/1.jpg" alt="1"></div>
+            <div class="heading"><h3>Seamlessly visualize quality</h3></div>
+            <div class="para"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum.</p></div>
             <div class="button"><p>Here's why</p></div>
         </div>
         <div class="card">
-            <img src="../assets/2.jpg" alt="2">
-            <h3>Completely Synergize</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend.</p>
+            <div class="image"><img src="../assets/2.jpg" alt="2"></div>
+            <div class="heading"><h3>Completely Synergize</h3></div>
+            <div class="para"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend.</p></div>
             <div class="button"><p>Here's why</p></div>
         </div>
         <div class="card">
-            <img src="../assets/3.jpg" alt="3">
-            <h3>Dynamically Procrastinate</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas.</p>
+            <div class="image"><img src="../assets/3.jpg" alt="3"></div>
+            <div class="heading"><h3>Dynamically Procrastinate</h3></div>
+            <div class="para"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent egestas.</p></div>
             <div class="button"><p>Here's why</p></div>
         </div>
         <div class="card">
-            <img src="../assets/4.jpg" alt="4">
-            <h3>Best in class</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in.</p>
+            <div class="image"><img src="../assets/4.jpg" alt="4"></div>
+            <div class="heading"><h3>Best in class</h3></div>
+            <div class="para"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in.</p></div>
             <div class="button"><p>Here's why</p></div>
         </div>
         <div class="card">
-            <img src="../assets/5.jpg" alt="5">
-            <h3>Dynamically innovative suppy chains</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies.</p>
+            <div class="image"><img src="../assets/5.jpg" alt="5"></div>
+            <div class="heading"><h3>Dynamically innovative suppy chains</h3></div>
+            <div class="para"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies.</p></div>
             <div class="button"><p>Here's why</p></div>
         </div>
         <div class="card">
-            <img src="../assets/6.jpg" alt="6">
-            <h3>Sanity check</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a.</p>
+            <div class="image"><img src="../assets/6.jpg" alt="6"></div>
+            <div class="heading"><h3>Sanity check</h3></div>
+            <div class="para"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a.</p></div>
             <div class="button"><p>Here's why</p></div>
         </div>
     </div>
